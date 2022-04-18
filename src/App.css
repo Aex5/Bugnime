@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.thumbnail::after{
+    content: "";
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5494397588136817) 74%, rgba(0,0,0,0.28053219578847166) 100%);
+    width: 100%;
+    height: 150px;
+    bottom: 0;
+    position: absolute;
+}
