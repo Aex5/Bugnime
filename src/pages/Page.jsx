@@ -54,7 +54,7 @@ function Page() {
                             alt=""
                           />
                         </div>
-                        <div className="p-1 font-semibold text-sm text-center text-white bottom-[-4.3rem] h-24 bg-black opacity-80 absolute group-hover:bottom-0 duration-200">
+                        <div className="p-1 font-semibold text-sm text-center text-white bottom-[-4.4rem] h-24 bg-black opacity-80 absolute group-hover:bottom-0 duration-200">
                           <p>{a.title}</p>
                         </div>
                       </div>
