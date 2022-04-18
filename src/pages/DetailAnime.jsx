@@ -51,7 +51,7 @@ export default function DetailAnime() {
             </div>
           </div>
           <div className="-translate-y-36 md:-translate-y-32 px-5">
-            <h1 className="text-2xl font-bold w-full md:text-3xl">
+            <h1 className="text-xl font-bold w-full md:text-3xl">
               {detail.title}
             </h1>
             <p className="text-xs pt-1 md:text-sm">
@@ -63,7 +63,10 @@ export default function DetailAnime() {
             <p className="text-sm">{detail.sinopsis}</p>
           </div>
 
-          <div className="flex gap-2">
+          <div
+            className="flex flex-col gap-2 sm:flex-row"
+            style={{ width: "fit-content" }}
+          >
             {genre.map((g) => {
               return (
                 <ul>
