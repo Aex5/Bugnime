@@ -78,10 +78,12 @@ export default function DetailAnime() {
           <div className="border-b-[1px] border-slate-300 pb-1 mb-2">
             <p className="pt-5 text-lg font-bold">Information</p>
           </div>
-          <p>Type : {detail.type}</p>
-          <p>Total eps : {detail.total_eps} Episode</p>
-          <time>Release : {detail.release}</time>
-          <div className="border-b-[1px] border-slate-300 pb-1 mb-2">
+          <div className="text-sm">
+            <p>Type : {detail.type}</p>
+            <p>Total eps : {detail.total_eps} Episode</p>
+            <time>Release : {detail.release}</time>
+          </div>
+          <div className="border-b-[1px] border-slate-300 pb-1 mb-2 mt-6">
             <p className="pt-5 text-lg font-bold">Download {detail.title}</p>
           </div>
           <div>
@@ -97,7 +99,6 @@ export default function DetailAnime() {
                             href={l.link}
                             className="flex text-md hover:text-[#CDBE78] "
                           >
-                            {" "}
                             {l.platform}
                           </a>
                         </button>
