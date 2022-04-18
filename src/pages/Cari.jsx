@@ -43,14 +43,14 @@ export default function Cari() {
                   return (
                     <div>
                       <Link to={`/api/anime/${a.link.endpoint}`}>
-                        <div className="w-44 h-64 relative overflow-hidden group rounded-xl border-[1px] border-slate-500">
-                          <div>
-                            <img
-                              className="mb-8 w-44 h-64 object-cover"
-                              src={a.link.thumbnail}
-                              alt=""
-                            />
-                          </div>
+                        <div className="w-40 h-56 relative mx-auto overflow-hidden group rounded-xl border-[1px] border-slate-500 md:w-44 md:h-64">
+                        <div>
+                          <img
+                            className="mb-8 w-40 h-56 object-cover md:w-44 md:h-64"
+                            src={a.link.thumbnail}
+                            alt=""
+                          />
+                        </div>
                           <div className="p-1 font-semibold text-sm text-center text-white bottom-[-4.3rem] h-24 bg-black opacity-80 absolute group-hover:bottom-0 duration-200">
                             <p>{a.title}</p>
                           </div>
