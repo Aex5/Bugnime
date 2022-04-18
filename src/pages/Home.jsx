@@ -36,7 +36,7 @@ function Home() {
       ) : (
         <>
           <div className="max-w-[1000px] w-full mx-auto px-4">
-            <div className="text-2xl font-semibold border-b-[1px] border-slate-300 mb-10">
+            <div className="text-lg font-semibold border-b-[1px] border-slate-300 mb-10 md:text-2xl">
               <h1 className="pb-2">Completed Anime</h1>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-1 ">
