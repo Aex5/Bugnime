@@ -33,7 +33,7 @@ export default function DetailAnime() {
   }, [detail]);
 
   return (
-    <div className="w-full max-w-[1000px] bg-[#1B1C25] mx-auto text-[#EBECF1] pt-28">
+    <div className="w-full max-w-[1000px] bg-[#1B1C25] mx-auto text-[#EBECF1] pt-28 px-4">
       {loading ? (
         <div className="flex flex-col h-full items-center justify-center">
           <ReactLoading type="balls" color="#066163" />
@@ -50,9 +50,11 @@ export default function DetailAnime() {
               />
             </div>
           </div>
-          <div className="-translate-y-32 px-5">
-            <h1 className="text-3xl font-bold w-full ">{detail.title}</h1>
-            <p className="text-sm pt-1">
+          <div className="-translate-y-36 md:-translate-y-32 px-5">
+            <h1 className="text-2xl font-bold w-full md:text-3xl">
+              {detail.title}
+            </h1>
+            <p className="text-xs pt-1 md:text-sm">
               {detail.japanese} | {detail.score} | {detail.status}
             </p>
           </div>
@@ -82,13 +84,16 @@ export default function DetailAnime() {
           <div>
             {download.map((d) => {
               return (
-                <div className="flex justify-start items-center">
-                  <p className="px-5  bg-[#206A5D]">{d.resolusi}</p>
-                  <div className="flex gap-4">
+                <div className="pt-5">
+                  <p className="px-5 py-1 bg-[#206A5D]">{d.resolusi}</p>
+                  <div className="flex gap-4 flex-col">
                     {d.link_download.map((l) => {
                       return (
                         <button className="px-3 py-1">
-                          <a href={l.link} className="hover:text-[#CDBE78]">
+                          <a
+                            href={l.link}
+                            className="flex text-md hover:text-[#CDBE78] "
+                          >
                             {" "}
                             {l.platform}
                           </a>
